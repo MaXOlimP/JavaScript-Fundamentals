@@ -64,3 +64,15 @@ undefined + 1 //Nan
 
 //Zadanie 6 (Comparison operators)
 
+5 > 4 // true
+"ананас" > "яблоко" // true - (false)
+"2" > "12" // true
+undefined == null //true
+undefined === null // false
+null == "\n0\n" //false
+null === +"\n0\n"//false
+
+//Zadanie 7()
+
+let quesion = prompt("Какое «официальное» название JavaScript?");
+let message = (quesion == "ECMAScript") ? alert("COrrect") : alert("NiePrawda");
