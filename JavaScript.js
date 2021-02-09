@@ -198,10 +198,18 @@ function SwitchIf() {
 
 
 //Functions 
+let userName = 'Вася';
 
 function showMessage() {
-    let message = "Привет, я JavaScript!"; // локальная переменная
+    userName = "Петя";
+    let message = 'Привет, ' + userName;
 
     alert(message);
 
 }
+
+alert(userName);
+
+showMessage();
+
+alert(userName)
