@@ -143,10 +143,12 @@ function zadanie8() {
 function SwitchIf() {
 
 
-    setInterval(function () {
-        let messageInput = document.getElementById('message')
-        window.alert(messageInput.value)
-    }, 7000);
+    // setInterval(function () {
+    //     let messageInput = document.getElementById('message')
+    //     window.alert(messageInput.value)
+    // }, 7000);
+
+
 
     let xae = prompt("Number Push");
     switch (xae) {
@@ -176,6 +178,9 @@ function SwitchIf() {
         alert('We hope that this page looks ok!');
     }
 
+
+
+
     let a = prompt('Введите число между 0 и 3', '');
     switch (a) {
         case '0':
@@ -197,19 +202,25 @@ function SwitchIf() {
 }
 
 
-//Functions 
-let userName = 'Вася';
+// //Functions 
+// let userName = 'Вася';
 
-function showMessage() {
-    userName = "Петя";
-    let message = 'Привет, ' + userName;
+// function showMessage() {
+//     userName = "Петя";
+//     let message = 'Привет, ' + userName;
 
-    alert(message);
+//     alert(message);
+
+// }
+
+
+function showMessage(from, text) {
+    if (text === undefined) {
+        text = "no text";
+    }
+    console.log(from + ":" + text);
+
 
 }
 
-alert(userName);
 
-showMessage();
-
-alert(userName)

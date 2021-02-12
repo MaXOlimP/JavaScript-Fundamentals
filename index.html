@@ -5,9 +5,173 @@
     <meta charset="UTF-8">
     <title>JavaScript hello world</title>
 </head>
-<h1 style="text-align:center">Run alert 2 steeps</h1>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        position: relative;
+        background: rgb(34, 193, 195);
+        background: linear-gradient(0deg,
+                rgba(34, 193, 195, 1) 0%,
+                rgba(216, 61, 229, 1) 52%,
+                rgba(253, 187, 45, 1) 100%);
+    }
+
+    h1 {
+        position: absolute;
+        text-align: center;
+        top: 30px;
+        border-radius: 125%;
+        background-color: skyblue;
+        padding: 30px;
+        margin: 10px;
+        color: white;
+    }
+
+    .aboutTitle {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gameWrapper {
+        position: relative;
+        border: 5px solid lime;
+        background: white;
+        height: 460px;
+        width: 460px;
+        z-index: 10;
+    }
+
+    .game {
+        position: inline;
+        height: 460px;
+        width: 460px;
+    }
+
+    .game2 {
+        display: inline;
+        position: absolute;
+        top: 0;
+        height: 460px;
+        width: 460px;
+        z-index: -1;
+    }
+
+    .circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: sticky;
+        background-color: purple;
+        z-index: 1;
+    }
+
+    .circle2 {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: sticky;
+        background-color: blue;
+        z-index: 2;
+    }
+
+    .move-1 {
+        animation: circle 6s linear 0s infinite;
+    }
+
+    .move-2 {
+        animation: circle2 6s linear 0s infinite;
+    }
+
+    @keyframes circle {
+        0% {
+            left: 50%;
+            top: 0;
+        }
+
+        25% {
+            left: 100%;
+            top: 50%;
+        }
+
+        50% {
+            left: 50%;
+            top: 100%;
+        }
+
+        75% {
+            left: 0;
+            top: 50%;
+        }
+
+        100% {
+            left: 50%;
+            top: 0;
+        }
+    }
+
+    @keyframes circle2 {
+        0% {
+            left: 50%;
+            top: 0;
+        }
+
+        25% {
+            left: 0;
+            top: 50%;
+        }
+
+        50% {
+            left: 50%;
+            top: 100%;
+        }
+
+        75% {
+            left: 100%;
+            top: 50%;
+        }
+
+        100% {
+            left: 50%;
+            top: 0;
+        }
+    }
+
+    .optitle {
+        display: relative;
+
+
+    }
+</style>
 
 <body>
+
+    <div class="aboutTitle">
+
+
+        <div class="optitle">
+            <h1>Have a nice day!</h1>
+        </div>
+
+
+
+        <div class="gameWrapper" onclick="toggleClick()">
+
+            <div class="game">
+                <div class="circle move-1" id="circleId"></div>
+            </div>
+
+            <div class="game2">
+                <div class="circle2 move-2" id="circleId2"></div>
+            </div>
+
+        </div>
+    </div>
     <script src="JavaScript.js"></script>
 </body>
 
