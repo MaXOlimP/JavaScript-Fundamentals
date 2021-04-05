@@ -50,4 +50,28 @@ function zadanie4(){
 
  function zadanie9(){
 
+    let login = prompt('Give me pls login!' , '');
+
+        if (login == 'Admin'){
+
+    let passwd = prompt('Give a password!' , '');
+
+        if (passwd == 'admin'){
+            alert('Im Big Bos');
+        }else if(passwd == '' || passwd == null) {
+            alert( 'Отменено' );
+        } else {
+            alert( 'Неверный пароль' );
+        }
+    
+            }else if(login == '' || login == null){
+                alert ('Otmena');
+            }else {
+                alert("I dont know you!");
+             }
+
+
+    }
+
+ 
  }
