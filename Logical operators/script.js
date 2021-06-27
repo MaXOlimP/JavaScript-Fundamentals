@@ -74,4 +74,3 @@ function zadanie4(){
     }
 
  
- }
