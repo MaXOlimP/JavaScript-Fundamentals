@@ -143,11 +143,6 @@
         }
     }
 
-    .optitle {
-        display: relative;
-
-
-    }
 </style>
 
 <body>
@@ -161,7 +156,7 @@
 
 
 
-        <div class="gameWrapper" onclick="toggleClick()">
+        <div class="gameWrapper" onclick="toggleClick()" id="gameWrapper2">
 
             <div class="game">
                 <div class="circle move-1" id="circleId"></div>
@@ -174,6 +169,14 @@
         </div>
     </div>
     <script src="JavaScript.js"></script>
+    <script>
+        let circleId;
+        let circleElement;
+        circleId = "circledId";
+
+        // window.alert('hello!');
+        circleElement = document.getElementById('circleId').pos;
+    </script>
 </body>
 
 </html>
