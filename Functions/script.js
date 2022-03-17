@@ -2,12 +2,14 @@
 let userName = 'Вася';
 
 function showMessage1() {
-    userName = "Петя";
+    let userName = "Петя";
     let message = 'Привет, ' + userName;
 
     alert(message);
 
 }
+showMessage1();
+alert(userName);
 
 
 function showMessage(from, text) {
@@ -18,6 +20,18 @@ function showMessage(from, text) {
 
 
 }
+showMessage('putler', 'hujsosi');
+showMessage('rus', 'idi nahuj');
+
+function showMessage2(from2,text2){
+    from2 = '*' + from2 + '*';
+    alert(from2 + ':' + text2);
+
+}
+let from2 = "Ania";
+showMessage2(from2,"hi");
+
+alert(from2);
 
 function checkAge(newYear) {
     if (newYear > 18) {
@@ -30,3 +44,4 @@ function checkAge(newYear) {
 
 }
 console.log(checkAge(19));
+
